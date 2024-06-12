@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 55;
+  background: var(--body-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  &__logo {
+    transition: 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__data {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__link {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: var(--first-color);
+    }
+  }
+}
